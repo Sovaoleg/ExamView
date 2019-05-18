@@ -1,0 +1,86 @@
+.fouth-section{
+	padding: 5em 0;
+	position: relative;
+	.wrp-main{
+		min-height: 650px;
+		position: relative;
+		padding: 1em;
+		.img-wrapper-f{
+			position: absolute;
+			bottom: 0;
+			transform: translateX(50%);
+			@include shadow-decor-box;
+			max-width: 60%;
+			background-color: $main-bg-color;
+			@media screen and (max-width: 767px){
+				transform: translateX(0);
+				left: 0;
+				top: 20%;
+				bottom: initial;
+				max-width: 100%;
+			}
+			.f-image{
+				width: 100%;
+				opacity: 0.2;
+			}
+		}
+		.wrp-mb{
+			margin-bottom: 2em;
+		}
+		&__container{
+			font-size: 1em;
+			line-height: 1.4;
+			max-width: 450px;
+			padding: 1em;
+			position: relative;
+			z-index: 1;
+			&::before{
+				content: '';
+				position: absolute;
+				width: 20%;
+				top: 0;
+				height: .2em;
+				background-color: $white-color;
+			}
+		}
+		&__title{
+			margin-bottom: .5em;
+			& > *{
+				@include title-style;
+
+			}
+		}
+		&__subtitle{
+			color: $white-color;
+		}
+		&__text{
+			font-weight: 100;
+			&:not(:last-child){
+				margin-bottom: 1em;
+			}
+		}
+	}
+	.img-wrapper_s{
+		position: absolute;
+		bottom: 0;
+		background-color: $main-bg-color;
+		@include shadow-decor-box;
+		max-width: 370px;
+		.s-image{
+			width: 100%;
+			opacity: 0.2;
+		}
+		&--l0{
+			left: 0;
+		}
+		&--r0{
+			right: 0;
+		}
+		&--lm{
+			left: 10%;
+		}
+		&--rm{
+			right: 10%;
+		}
+	}
+}

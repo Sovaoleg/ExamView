@@ -1,0 +1,26 @@
+@mixin settings-bg {
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: 50% 50%;
+}
+@mixin shadow-decor-text{
+	text-shadow: 0 160px 160px rgba(0,0,0,0.45);
+}
+@mixin shadow-decor-box{
+	box-shadow: 0 160px 160px rgba(0,0,0,0.45);
+}
+@mixin title-style {
+	font-size: 2.7em;
+	font-weight: 100;
+	line-height: 1;
+}
+@mixin max-575 {
+	@media screen and (max-width: 575px) {
+		@content;
+	}
+}
+@mixin min-575 {
+	@media screen and (min-width: 576px) {
+		@content;
+	}
+}

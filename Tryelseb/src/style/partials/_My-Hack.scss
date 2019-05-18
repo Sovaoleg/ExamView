@@ -1,0 +1,10 @@
+///------------third-section------------///
+.mb-row-th-sc {
+	margin-bottom: 30px;
+	@media screen and (min-width: 530px){
+		margin-bottom: 100px;
+	}
+}
+.mh-row{
+	min-height: 400px;
+}

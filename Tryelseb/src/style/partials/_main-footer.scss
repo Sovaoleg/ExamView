@@ -1,0 +1,51 @@
+.main-footer{
+	padding: 1em 0;
+	.footer-container{
+		border-top: 1px solid rgba($white-color, .1);
+		padding: 1.5em 0;
+		&__text{
+			text-align: center;
+		}
+	}
+	.contact-info{
+		height: 100%;
+		padding: 1em;
+		display: flex;
+		flex-direction: column;
+		justify-content: flex-start;
+		align-items: center;
+		text-align: center;
+		transition: all .5s;
+		cursor: pointer;
+		&:hover span{
+			border-bottom: none;
+			transition: all .5s;
+		}
+		&:hover .fas{
+			color: $white-color;
+			transition: all .5s;
+		}
+		&:hover .contact-info__link{
+			transition: all .5s;
+			border-bottom: 2px solid darkred;
+		}
+		.fas{
+			font-size: 1.5em;
+			color: darkred;
+			transition: all .5s;
+		}
+		&__text span{
+			font-weight: 200;
+			font-size: 1.2em;
+			border-bottom: 2px solid darkred;
+			font-family: $decor-font;
+			font-weight: 500;
+			transition: all .5s;
+		}
+		&__link{
+			color: #ffffff;
+			text-decoration: none;
+			transition: all .5s;
+		}
+	}
+}
